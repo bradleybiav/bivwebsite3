@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+#container a {
+    position: absolute;
+    bottom: 120px; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 8rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center; /* Center the text */
+    white-space: nowrap; /* Prevent the text from wrapping to multiple lines */
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    #container a {
+        font-size: 15vw; /* Adjust text size on mobile */
+        line-height: 1.2; /* Adjust line spacing for mobile */
+        white-space: nowrap; /* Ensure text stays on one line */
+    }
+}
